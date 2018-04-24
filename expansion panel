@@ -1,0 +1,30 @@
+TS
+import {Component} from '@angular/core';
+
+/**
+ * @title Expansion panel as accordion
+ */
+@Component({
+  selector: 'expansion-steps-example',
+  templateUrl: 'expansion-steps-example.html',
+  styleUrls: ['expansion-steps-example.css']
+})
+export class ExpansionStepsExample {
+  step = 0;/** first step */
+  setStep(index: number) {/** adding next step button  comment is thi.s step++ */
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {/** same for previous its just this.step-- */
+    this.step--;
+  }
+}
+
+
+/**  Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license */
